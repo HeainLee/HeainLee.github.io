@@ -1,5 +1,5 @@
 ---
-title: "Foo Bar Identity"
+title: "Identity"
 excerpt: "Foo Bar design system including logo mark, website design, and branding applications."
 header:
   image: /assets/images/martin-adams-pTCcJSBOTxY-unsplash.jpg
