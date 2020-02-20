@@ -14,11 +14,11 @@
 # remote_theme           : "mmistakes/minimal-mistakes"
 
 remote_theme : mmistakes/minimal-mistakes
-minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "dark" # "default", "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "ko" # 타깃 국가
-title                    : "blah blah GitHub Blog"
+title                    : "GitHub Blog"
 title_separator          : "-"
 subtitle                 : "No Brain, No Code" # site tagline that appears below site title in masthead
 name                     : "Helen 惠仁"
@@ -113,7 +113,7 @@ author:
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Data Scienctist"
   location         : "Seoul, S.Korea"
-  email            : 
+  email            : "hil106@khu.ac.kr"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
@@ -225,7 +225,7 @@ sass:
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
-timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: "Asia/Seoul" # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Plugins (previously gems:)
@@ -292,6 +292,15 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: # true
+      comments: true
       share: true
       related: true
+  #>>>>>>>>>>>>>>>>>>> 여기서부터 추가 됨
+  # _pages 부분입니다.
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+  # >>>>>>>>>>>>>>>>>>>> 여기까지 추가 됨
