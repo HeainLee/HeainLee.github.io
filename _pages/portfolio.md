@@ -20,11 +20,11 @@ gallery:
   - url: /assets/images/ales-nesetril-Im7lZjxeLhg-unsplash.jpg
     image_path: assets/images/ales-nesetril-Im7lZjxeLhg-unsplash.jpg
     alt: "placeholder image 1"
-  - url: /assets/images/anas-alshanti-feXpdV001o4-unsplash.jpg
-    image_path: assets/images/anas-alshanti-feXpdV001o4-unsplash-th.jpg
+  - url: /assets/images/ales-nesetril-Im7lZjxeLhg-unsplash.jpg
+    image_path: assets/images/ales-nesetril-Im7lZjxeLhg-unsplash.jpg
     alt: "placeholder image 2"
-  - url: /assets/images/etienne-bosiger-WTkUYzNCu-A-unsplash.jpg
-    image_path: assets/images/etienne-bosiger-WTkUYzNCu-A-unsplash-th.jpg
+  - url: /assets/images/ales-nesetril-Im7lZjxeLhg-unsplash.jpg
+    image_path: assets/images/ales-nesetril-Im7lZjxeLhg-unsplash.jpg
     alt: "placeholder image 3"
 ---
 
