@@ -14,6 +14,14 @@ header:
 intro: 
   - excerpt: 'Whom have I in heaven but thee? and there is none upon earth that I desire beside thee. My flesh and my heart faileth: but God is the strength of my heart, and my portion for ever. Psalms 73:25-26'
 
+sidebar:
+  - title: "Role"
+    image: /assets/images/panitan-punpuang-TuIcz8wgB74-unsplash.jpg
+    image_alt: "logo"
+    text: "Developer"
+  - title: "Responsibilities"
+    text: "Reuters try PR stupid commenters should isn't a business model"
+
 feature_row:
   - image_path: /assets/images/anas-alshanti-feXpdV001o4-unsplash.jpg
     alt: "Data Scientist"
@@ -31,7 +39,7 @@ feature_row:
 feature_row2:
   - image_path: /assets/images/coffee.jpg
     alt: "placeholder image 2"
-    title: "What I like 01"
+    title: "What I like 02"
     excerpt: 'I like drinking a **Coffee**. I drink every mooorning & afternooon'
     url: "#test-link"
     btn_label: "Read More"
