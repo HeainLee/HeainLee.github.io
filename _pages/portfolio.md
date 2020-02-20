@@ -3,7 +3,6 @@ layout: collection
 permalink: /portfolio/
 title: "Identity"
 collection: portfolio
-entries_layout: grid
 classes: wide
 
 excerpt: "Foo Bar design system including logo mark, website design, and branding applications."
