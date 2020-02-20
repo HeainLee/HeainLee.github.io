@@ -34,5 +34,5 @@ gallery:
 
 {% include feature_row id="intro" type="center" %}
 
-{% include gallery layout="thrid" caption="I love breaking through the wall. I love learning something new" type="center" %}
+{% raw %}{% include gallery layout="" caption="I love **breaking through** the wall. I love **learning** something new" type="center" %}{% endraw %}
 
