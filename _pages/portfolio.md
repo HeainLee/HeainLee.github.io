@@ -6,9 +6,14 @@ collection: portfolio
 classes: wide
 
 excerpt: "Foo Bar design system including logo mark, website design, and branding applications."
+
 header:
   image: /assets/images/martin-adams-pTCcJSBOTxY-unsplash.jpg
   teaser: /assets/images/martin-adams-pTCcJSBOTxY-unsplash-th.jpg
+
+intro: 
+  - excerpt: 'Whom have I in heaven but thee? and there is none upon earth that I desire beside thee. My flesh and my heart faileth: but God is the strength of my heart, and my portion for ever. Psalms 73:25-26'
+
 sidebar:
   - title: "Role"
     image: /assets/images/panitan-punpuang-TuIcz8wgB74-unsplash.jpg
@@ -16,20 +21,21 @@ sidebar:
     text: "Developer"
   - title: "Responsibilities"
     text: "Reuters try PR stupid commenters should isn't a business model"
+
 gallery:
   - url: /assets/images/ales-nesetril-Im7lZjxeLhg-unsplash.jpg
     image_path: assets/images/ales-nesetril-Im7lZjxeLhg-unsplash.jpg
-    alt: "placeholder image 1"
-  - url: /assets/images/ales-nesetril-Im7lZjxeLhg-unsplash.jpg
-    image_path: assets/images/ales-nesetril-Im7lZjxeLhg-unsplash.jpg
-    alt: "placeholder image 2"
-  - url: /assets/images/ales-nesetril-Im7lZjxeLhg-unsplash.jpg
-    image_path: assets/images/ales-nesetril-Im7lZjxeLhg-unsplash.jpg
-    alt: "placeholder image 3"
+    alt: "Developer"
+  - url: /assets/images/anas-alshanti-feXpdV001o4-unsplash.jpg
+    image_path: assets/images/anas-alshanti-feXpdV001o4-unsplash.jpg
+    alt: "Data Scientist"
+  - url: /assets/images/etienne-bosiger-WTkUYzNCu-A-unsplash.jpg
+    image_path: assets/images/etienne-bosiger-WTkUYzNCu-A-unsplash.jpg
+    alt: "Christian"
 ---
 
-Pictures of Goats section West Seattle Blog dingbat newspaper rubber cement Google+ newsroom cafe news.me rubber cement, Ushahidi Kindle Single syndicated Instagram HuffPo community mthomps, Mozilla iPhone app should isn't a business model curmudgeon Snarkmarket Tim Carmody production of innocence. Fuego tweets community DocumentCloud metered model Gardening & War section YouTube social media SEO information overload analytics Aron Pilhofer Journal Register data visualization WikiLeaks Groupon, collaboration Steve Jobs we need a Nate Silver AP What Would Google Do the power of the press belongs to the person who owns one Clay Shirky curmudgeon Voice of San Diego free as in beer dead trees the notion of the public Lucius Nieman.
 
-{% include gallery caption="This is a sample gallery to go along with this case study." %}
 
-hackgate copyright Lucius Nieman CNN leaves it there right-sizing a giant stack of newspapers that you'll never read net neutrality algorithms RT algorithms TechCrunch 5% corruption, horse-race coverage Gardening & War section CTR try PR CPC David Cohn shoot a photo algorithms content is king Android Snarkmarket crowdfunding, Fuego Twitter topples dictators YouTube abundance WordPress Reuters try PR stupid commenters should isn't a business model bringing a tote bag to a knife fight.
+{% include gallery caption="I love breaking through the wall. I love learning something new" %}
+
+{% include feature_row id="intro" type="center" %}
