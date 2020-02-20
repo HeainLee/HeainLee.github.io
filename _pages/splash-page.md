@@ -1,5 +1,5 @@
 ---
-layout: collection
+layout: splash
 permalink: /splash-page/
 title: "Splash About"
 
@@ -49,7 +49,7 @@ feature_row3:
 
 {% include feature_row id="intro" type="center" %}
 
-{% include feature_row id="feature_row1" caption="I love **breaking through** the wall. I love **learning** something new" type="center"%}
+{% include feature_row %}
 
 {% include feature_row id="feature_row2" type="left" %}
 
