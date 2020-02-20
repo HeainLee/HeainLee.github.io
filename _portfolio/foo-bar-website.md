@@ -2,24 +2,24 @@
 title: "Foo Bar Identity"
 excerpt: "Foo Bar design system including logo mark, website design, and branding applications."
 header:
-  image: /assets/images/foo-bar-identity.jpg
-  teaser: /assets/images/foo-bar-identity-th.jpg
+  image: /assets/images/martin-adams-pTCcJSBOTxY-unsplash.jpg
+  teaser: /assets/images/martin-adams-pTCcJSBOTxY-unsplash-th.jpg
 sidebar:
   - title: "Role"
-    image: http://placehold.it/350x250
+    image: /assets/images/panitan-punpuang-TuIcz8wgB74-unsplash.jpg
     image_alt: "logo"
-    text: "Designer, Front-End Developer"
+    text: "Developer"
   - title: "Responsibilities"
     text: "Reuters try PR stupid commenters should isn't a business model"
 gallery:
-  - url: /assets/images/unsplash-gallery-image-1.jpg
-    image_path: assets/images/unsplash-gallery-image-1-th.jpg
+  - url: /assets/images/ales-nesetril-Im7lZjxeLhg-unsplash.jpg
+    image_path: assets/images/ales-nesetril-Im7lZjxeLhg-unsplash.jpg
     alt: "placeholder image 1"
-  - url: /assets/images/unsplash-gallery-image-2.jpg
-    image_path: assets/images/unsplash-gallery-image-2-th.jpg
+  - url: /assets/images/anas-alshanti-feXpdV001o4-unsplash.jpg
+    image_path: assets/images/anas-alshanti-feXpdV001o4-unsplash-th.jpg
     alt: "placeholder image 2"
-  - url: /assets/images/unsplash-gallery-image-3.jpg
-    image_path: assets/images/unsplash-gallery-image-3-th.jpg
+  - url: /assets/images/etienne-bosiger-WTkUYzNCu-A-unsplash.jpg
+    image_path: assets/images/etienne-bosiger-WTkUYzNCu-A-unsplash-th.jpg
     alt: "placeholder image 3"
 ---
 
