@@ -36,8 +36,7 @@ gallery:
     title: "Christian"
 ---
 
-
+{% include feature_row id="intro" type="center" %}
 
 {% include gallery caption="I love breaking through the wall. I love learning something new" %}
 
-{% include feature_row id="intro" type="center" %}
