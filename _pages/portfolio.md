@@ -8,8 +8,10 @@ classes: wide
 excerpt: "Foo Bar design system including logo mark, website design, and branding applications."
 
 header:
-  image: /assets/images/martin-adams-pTCcJSBOTxY-unsplash.jpg
-  teaser: /assets/images/martin-adams-pTCcJSBOTxY-unsplash-th.jpg
+  overlay_color: "#000"
+  overlay_filter: "0.5"
+  image: /assets/images/hilthart-pedersen-X3jymZ1oJ2E-unsplash.jpg
+  teaser: /assets/images/hilthart-pedersen-X3jymZ1oJ2E-unsplash-th.jpg
 
 intro: 
   - excerpt: 'Whom have I in heaven but thee? and there is none upon earth that I desire beside thee. My flesh and my heart faileth: but God is the strength of my heart, and my portion for ever. Psalms 73:25-26'
@@ -25,13 +27,13 @@ sidebar:
 gallery:
   - url: /assets/images/ales-nesetril-Im7lZjxeLhg-unsplash.jpg
     image_path: assets/images/ales-nesetril-Im7lZjxeLhg-unsplash.jpg
-    alt: "Developer"
+    title: "Developer"
   - url: /assets/images/anas-alshanti-feXpdV001o4-unsplash.jpg
     image_path: assets/images/anas-alshanti-feXpdV001o4-unsplash.jpg
-    alt: "Data Scientist"
+    title: "Data Scientist"
   - url: /assets/images/etienne-bosiger-WTkUYzNCu-A-unsplash.jpg
     image_path: assets/images/etienne-bosiger-WTkUYzNCu-A-unsplash.jpg
-    alt: "Christian"
+    title: "Christian"
 ---
 
 
