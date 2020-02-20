@@ -1,11 +1,9 @@
 ---
 layout: collection
 permalink: /portfolio/
-title: "Identity"
+title: "About"
 collection: portfolio
 classes: wide
-
-excerpt: "Foo Bar design system including logo mark, website design, and branding applications."
 
 header:
   overlay_image: /assets/images/hilthart-pedersen-X3jymZ1oJ2E-unsplash.jpg
