@@ -14,7 +14,7 @@ header:
 intro: 
   - excerpt: 'Whom have I in heaven but thee? and there is none upon earth that I desire beside thee. My flesh and my heart faileth: but God is the strength of my heart, and my portion for ever. Psalms 73:25-26'
 
-feature_row:
+feature_row1:
   - image_path: /assets/images/anas-alshanti-feXpdV001o4-unsplash.jpg
     alt: "Data Scientist"
     title: "Data Scientist"
@@ -47,9 +47,9 @@ feature_row3:
     btn_class: "btn--primary"
 ---
 
-{% include feature_row %}
+{% include feature_row id="intro" type="center" %}
 
-{% include feature_row caption="I love **breaking through** the wall. I love **learning** something new" type="center" %}
+{% include feature_row id="feature_row1" caption="I love **breaking through** the wall. I love **learning** something new" type="center"%}
 
 {% include feature_row id="feature_row2" type="left" %}
 
