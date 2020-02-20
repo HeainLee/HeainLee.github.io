@@ -15,22 +15,18 @@ intro:
   - excerpt: 'Whom have I in heaven but thee? and there is none upon earth that I desire beside thee. My flesh and my heart faileth: but God is the strength of my heart, and my portion for ever. Psalms 73:25-26'
 
 feature_row:
+  - image_path: /assets/images/anas-alshanti-feXpdV001o4-unsplash.jpg
+    alt: "Data Scientist"
+    title: "Data Scientist"
+    excerpt: "I am a Data Scientist since 2017"
   - image_path: /assets/images/ales-nesetril-Im7lZjxeLhg-unsplash.jpg
     alt: "Developer"
     title: "Developer"
-    excerpt: "This is some sample content that goes here with **Markdown** formatting."
-  - image_path: /assets/images/anas-alshanti-feXpdV001o4-unsplash.jpg
-    image_caption: "Image courtesy of [Unsplash](https://unsplash.com/)"
-    alt: "Data Scientist"
-    title: "Data Scientist"
-    excerpt: "This is some sample content that goes here with **Markdown** formatting."
-    url: "#test-link"
-    btn_label: "Read More"
-    btn_class: "btn--primary"
+    excerpt: "I am a Back-end Developer since 2019"
   - image_path: /assets/images/etienne-bosiger-WTkUYzNCu-A-unsplash.jpg
     alt: "Christian"
     title: "Christian"
-    excerpt: "This is some sample content that goes here with **Markdown** formatting."
+    excerpt: "I am a Christian since ... "
 
 feature_row2:
   - image_path: /assets/images/coffee.jpg
@@ -52,8 +48,6 @@ feature_row3:
 ---
 
 {% include feature_row id="intro" type="center" %}
-
-{% include feature_row %}
 
 {% include feature_row caption="I love **breaking through** the wall. I love **learning** something new" type="center" %}
 
