@@ -2,8 +2,8 @@
 title: "Distilling the Knowledge in a Neural Network
 date: 2020-02-21
 permalink: /paper/
-tags : deep-learning
-categories: deep-learning
+tags : deeplearning
+categories: deeplearning
 ---
 
 이 포스팅은 [이 블로그][이 블로그]에서 정리한 논문을 내가 읽으면서 정리한 내용이다.
