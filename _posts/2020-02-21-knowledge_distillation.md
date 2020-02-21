@@ -1,4 +1,3 @@
-
 ---
 title: "Distilling the Knowledge in a Neural Network
 date: 2020-02-21
