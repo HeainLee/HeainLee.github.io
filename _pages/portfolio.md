@@ -17,8 +17,8 @@ sidebar:
     image: /assets/images/panitan-punpuang-TuIcz8wgB74-unsplash.jpg
     image_alt: "logo"
     text: "Developer"
-  - title: "Responsibilities"
-    text: "Reuters try PR stupid commenters should isn't a business model"
+  - title: "Enthusiastic"
+    text: "take new ideas and put it in practice"
 
 feature_row:
   - image_path: /assets/images/anas-alshanti-feXpdV001o4-unsplash.jpg
@@ -35,15 +35,6 @@ feature_row:
     excerpt: "I am a Christian since ... "
 
 feature_row2:
-  - image_path: /assets/images/coffee.jpg
-    alt: "placeholder image 2"
-    title: "What I like 02"
-    excerpt: 'I like drinking a **Coffee**. I drink every mooorning & afternooon'
-    url: "#test-link"
-    btn_label: "Read More"
-    btn_class: "btn--primary"
-
-feature_row3:
   - image_path: /assets/images/hyunsang.jpg
     alt: "placeholder image 2"
     title: "What I like 01"
@@ -59,4 +50,3 @@ feature_row3:
 
 {% include feature_row id="feature_row2" type="left" %}
 
-{% include feature_row id="feature_row3" type="right" %}
