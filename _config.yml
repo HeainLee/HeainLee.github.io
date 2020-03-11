@@ -20,7 +20,7 @@ minimal_mistakes_skin    : "default" # "default", "air", "aqua", "contrast", "da
 locale                   : "ko" # 타깃 국가
 title                    : "GitHub Blog"
 title_separator          : "-"
-subtitle                 : "No Brain, No Code" # site tagline that appears below site title in masthead
+subtitle                 : "기억력을 믿을 수 없어서" # site tagline that appears below site title in masthead
 name                     : "Helen 惠仁"
 description              : "A tenable website."
 url                      : "https://HeainLee.github.io" # 블로그 주소
@@ -109,7 +109,7 @@ analytics:
 
 # Site Author
 author:
-  name             : "惠仁"
+  name             : "Heain"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Data Scienctist"
   location         : "Seoul, S.Korea"
