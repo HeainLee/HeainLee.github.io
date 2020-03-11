@@ -12,9 +12,8 @@ categories: python
 **그렇다. 드디어 맥북프로를 샀다!!🤣**
 
 <figure class="half">
-    <img src="/assets/images/medhat-dawoud-f-3mUXFLY2o-unsplash.jpg"></a>
-    <img src="/assets/images/jay-wennington-loAgTdeDcIU-unsplash.jpg"></a>
-    <figcaption>Caption describing these two images.</figcaption>
+    <img src="/assets/images/medhat-dawoud-f-3mUXFLY2o-unsplash.jpg">
+    <img src="/assets/images/jay-wennington-loAgTdeDcIU-unsplash.jpg">
 </figure>
 
 사긴 샀는데, 자판 + 배터리 하자가 있는 제품이 뽑혀서 배송받고도 며칠간은 사용도 못해봤다..ㅋㅋ 투바센터에서 하루만에 수리가 되어서 지금은 잘 쓰고 있다.
