@@ -42,7 +42,7 @@ xcode-select --install
 
 터미널에 Installation successful! 이라고 뜰 것이다. `brew --version` 를 통해 버전을 확인해본다.
 
-![이미지2](./img/print-brew-version.png)
+![브루버전](./img/print-brew-version.png)
 
 brew를 통해 설치된 list를 확인하는 방법은 `brew list` 이며 설치 직후에는 아무것도 뜨지 않는다.
 
@@ -57,7 +57,7 @@ brew install python3
 
 설치가 완료되면 `brew list`의 결과가 다음처럼 보일 것이다.
 
-![이미지2](./img/print-brew-list.png)
+![브루리스트](./img/print-brew-list.png)
 
 python3 버전을 확인해보면 다음과 같다.
 
