@@ -30,19 +30,23 @@ categories: python
 
 Homebrew를 설치하기 전에 Xcode를 설치한다.
 
-```terminal
-xcode-select --install
+```bash
+$ xcode-select --install
 ```
 
 그러면 이제 진짜 Homebrew를 설치한다. 사실 이때 당황스러웠던게 [공식사이트][공식사이트] 에서는 아래와 같이 터미널에 복사하라고 하고, 다른 블로그에서는 `/bin/bash -c ` 대신에 `ruby -c` 또는 `/usr/bin/ruby -e`  라고 적혀 있었기 때문. 나는 아래와 같이 설치했다.
  
-```terminal
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+```bash
+$ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 ```
 
 터미널에 Installation successful! 이라고 뜰 것이다. `brew --version` 를 통해 버전을 확인해본다.
 
-![브루버전](./img/print-brew-version.png)
+```bash
+$ brew --version
+Homebrew 2.2.10
+> Homebrew/homebrew-core (git revision 2575b; last commit 2020-03-11)
+```
 
 brew를 통해 설치된 list를 확인하는 방법은 `brew list` 이며 설치 직후에는 아무것도 뜨지 않는다.
 
@@ -51,13 +55,16 @@ brew를 통해 설치된 list를 확인하는 방법은 `brew list` 이며 설�
 
 brew를 통한 python3 설치는 매우 간단하다.
 
-```terminal
-brew install python3
+```bash
+$ brew install python3
 ```
 
 설치가 완료되면 `brew list`의 결과가 다음처럼 보일 것이다.
 
-![브루리스트](./img/print-brew-list.png)
+```bash
+$ brew list
+> gdbm   openssl@1.1   python   readline   sqlite   xz
+```
 
 python3 버전을 확인해보면 다음과 같다.
 
