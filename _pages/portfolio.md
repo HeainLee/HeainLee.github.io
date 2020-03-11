@@ -37,8 +37,8 @@ feature_row:
 feature_row2:
   - image_path: /assets/images/hyunsang.jpg
     alt: "placeholder image 2"
-    title: "What I like 01"
-    excerpt: 'I like **Musicians**. Especially *HSS* & *Hoppipolla* ' 
+    title: "What I like"
+    excerpt: ' **Musicians**. Especially *HSS* & *Hoppipolla* ' 
     url: "https://www.youtube.com/watch?v=wnM_Kb4cU24"
     btn_label: "Read More"
     btn_class: "btn--primary"
