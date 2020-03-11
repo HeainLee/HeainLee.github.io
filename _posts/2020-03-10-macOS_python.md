@@ -26,7 +26,7 @@ categories: python
 
 ## 01. Homebrew 설치
 
-맥에 python3를 설치하는 방법은 몇 가지가 있지만, 나는 Homebrew를 통해 설치했다. Homebrew는 패키지 관리 시스템으로, 리눅에서 apt-get과 비슷하다.
+맥에 python3를 설치하는 방법은 몇 가지가 있지만, 나는 Homebrew를 통해 설치했다. Homebrew는 패키지 관리 시스템으로, 리눅스에서 apt-get과 비슷하다.
 
 Homebrew를 설치하기 전에 Xcode를 설치한다.
 
@@ -42,7 +42,7 @@ xcode-select --install
 
 터미널에 Installation successful! 이라고 뜰 것이다. `brew --version` 를 통해 버전을 확인해본다.
 
-![이미지2](C:/Users/Daumsoft/Documents/HeainLee.github.io/_data/print-brew-version.png)
+![이미지2](./img/print-brew-version.png)
 
 brew를 통해 설치된 list를 확인하는 방법은 `brew list` 이며 설치 직후에는 아무것도 뜨지 않는다.
 
@@ -57,7 +57,7 @@ brew install python3
 
 설치가 완료되면 `brew list`의 결과가 다음처럼 보일 것이다.
 
-![이미지2](./_data/print-brew-list.png)
+![이미지2](./img/print-brew-list.png)
 
 python3 버전을 확인해보면 다음과 같다.
 
