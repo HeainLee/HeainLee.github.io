@@ -11,6 +11,12 @@ categories: python
 
 **그렇다. 드디어 맥북프로를 샀다!!🤣**
 
+<figure class="half">
+    <img src="/assets/images/medhat-dawoud-f-3mUXFLY2o-unsplash.jpg"></a>
+    <img src="/assets/images/jay-wennington-loAgTdeDcIU-unsplash.jpg"></a>
+    <figcaption>Caption describing these two images.</figcaption>
+</figure>
+
 사긴 샀는데, 자판 + 배터리 하자가 있는 제품이 뽑혀서 배송받고도 며칠간은 사용도 못해봤다..ㅋㅋ 투바센터에서 하루만에 수리가 되어서 지금은 잘 쓰고 있다.
 
 
@@ -70,7 +76,7 @@ python3 버전을 확인해보면 다음과 같다.
 
 
 
-### 03. 파이썬 가상환경 사용하기
+## 03. 파이썬 가상환경 사용하기
 지금까지 파이썬을 사용하면서 가장 귀찮았던 부분은 역시나 버전관리였다. 운영체제마다 가상환경 사용법도 달랐고, virtualenv, pyenv 또는 conda를 사용하는 방법까지 많은 옵션은 저울질해서 항상 그때마다 다른 방법을 사용하기도 했다.
 
 
