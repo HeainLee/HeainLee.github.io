@@ -18,7 +18,7 @@ sidebar:
     image_alt: "logo"
     text: "Developer"
   - title: "Enthusiastic"
-    text: "take new ideas and put it in practice"
+    text: "take new ideas and put them in practice"
 
 feature_row:
   - image_path: /assets/images/anas-alshanti-feXpdV001o4-unsplash.jpg
