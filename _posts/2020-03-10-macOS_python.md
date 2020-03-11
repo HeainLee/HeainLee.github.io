@@ -42,7 +42,7 @@ xcode-select --install
 
 터미널에 Installation successful! 이라고 뜰 것이다. `brew --version` 를 통해 버전을 확인해본다.
 
-![이미지2](./_data/print-brew-version.png)
+![이미지2](C:/Users/Daumsoft/Documents/HeainLee.github.io/_data/print-brew-version.png)
 
 brew를 통해 설치된 list를 확인하는 방법은 `brew list` 이며 설치 직후에는 아무것도 뜨지 않는다.
 
