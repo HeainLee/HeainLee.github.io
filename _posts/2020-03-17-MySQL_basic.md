@@ -2,7 +2,6 @@
 title: "윈도우10에서 MySQL 데이터베이스 설치 / SQL 기본문법"
 date: 2020-03-17
 permalink: /dev/post02
-classes: wide
 tags : sql
 categories: sql
 ---
@@ -16,15 +15,10 @@ categories: sql
 
 [오라클 홈페이지]에 들어가서 윈도우 OS에 맞는 MySQL를 다운로드 받는다.
 
-다운로드 받은 파일을 클릭해서 설치를 진행하면 된다.
+다운로드 받은 파일을 클릭해서 설치를 진행하면 된다. (Next를 열 번은 넘게 누르게 될 것이다..)
 
 <figure >
-    <img src="/assets/images/mysql_installing.PNG">
-    <img src="/assets/images/mysql_KakaoTalk_20200316_113017531.PNG">
-    <img src="/assets/images/mysql_KakaoTalk_20200316_113051007.PNG">
-    <img src="/assets/images/mysql_KakaoTalk_20200316_113245932.PNG">
-    <img src="/assets/images/mysql_KakaoTalk_20200316_113305871.PNG">
-    <img src="/assets/images/mysql_KakaoTalk_20200316_113424323.PNG">
+    <img src="/assets/images/mysql_installing_zip.PNG">
 </figure>
 
 생각보다 오래 걸린다.. 근데 설치는 이게 끝이다 ㅋㅋ 
@@ -122,12 +116,12 @@ ALTER TABLE customer_db CHANGE DROP modelnumber age;
 ```
 
 
-## 03. SQL 기초 문법의 이해 (데이터 다루기) 🍄
+## 03. SQL 기초 문법의 이해 (데이터 다루기) 🌿
 
 데이터 관리란 데이터를 생성하고, 읽고, 수정하고 삭젠하
 CRUD - 데이터 생성, 읽기(검색), 수정(갱신), 삭제
 
-### 🍄 데이터 생성: 테이블에 컬럼에 맞추어 테이터를 넣는 작업
+### 🌿 데이터 생성: 테이블에 컬럼에 맞추어 테이터를 넣는 작업
 
 테이블 전체 컬럼에 대응하는 값을 모두 넣기
 
@@ -136,7 +130,7 @@ INSERT INTO mytable VALUES(1, 'i7', '7700', 'Kaby Lake');
 INSERT INTO mytable (name, model_name, model_type) VALUES('i7', '7700', 'Kaby Lake');
 ```
 
-### 🍄 데이터 읽기: 테이블에 저장된 데이터를 읽는 작업
+### 🌿 데이터 읽기: 테이블에 저장된 데이터를 읽는 작업
 
 테이블 전체 컬럼의 데이터를 모두 읽기
 ```sql
@@ -197,7 +191,7 @@ SELECT * FROM [테이블명] LIMIT 100, 10; # 결과 중 100번째부터 10개�
 SELECT [컬럼명1], [컬럼명2] FROM [테이블명] WHERE [컬럼명1] < [조건값] AND [컬럼명2] LIKE [조건값] ORDER BY [컬럼명2] DESC LIMIT 2;
 ```
 
-### 🍄 데이터 수정: 테이블에 저장된 데이터를 수정하는 작업
+### 🌿 데이터 수정: 테이블에 저장된 데이터를 수정하는 작업
 
 보통 WHERE 조건문과 함께 쓰여서, 특정한 조건에 맞는 데이터만 수정하는 경우가 많음
 
@@ -211,7 +205,7 @@ UPDATE [테이블명] SET [수정할 컬럼명] == [수정값] WHERE [특정 컬
 UPDATE [테이블명] SET [수정할 컬럼명] == [수정값], [수정할 컬럼명2] == [수정값] WHERE [특정 컬럼명] = [값];
 ```
 
-### 🍄 데이터 삭제: 테이블에 저장된 데이터를 삭제하는 작업
+### 🌿 데이터 삭제: 테이블에 저장된 데이터를 삭제하는 작업
 
 보통 WHERE 조건문과 함께 쓰여서, 특정한 조건에 맞는 데이터만 삭제하는 경우가 많음
 
@@ -227,4 +221,5 @@ DELETE FROM [테이블명];
 
 
 [오라클 홈페이지]: https://dev.mysql.com/downloads/
+
 
