@@ -1,13 +1,13 @@
 ---
-title: "윈도우 환경에서 MySQL 데이터베이스 설치 / SQL 기본문법"
-date: 2020-03-16
+title: "윈도우10에서 MySQL 데이터베이스 설치 / SQL 기본문법"
+date: 2020-03-17
 permalink: /dev/post02
 classes: wide
 tags : sql
 categories: sql
 ---
 
-이 포스팅은 내 윈도우 환경에 MySQL를 어떻게 설치했는지에 대한 내용을 정리한 것이다. 참고로 MySQL은 DBMS 랭킹2위로 많이 사용되는 DB 중 하나이다. 최근에는 빅데이터 분석을 위해 MongoDB와 같은 NoSQL이 많이 사용된다. 향후 MongoDB 설치와 사용법을 알아볼 예정이다.(MongoDB는 맥에 설치/사용 예정)
+이 포스팅은 내 윈도우10 환경에 MySQL를 어떻게 설치했는지에 대한 내용을 정리한 것이다. 참고로 MySQL은 DBMS 랭킹2위로 많이 사용되는 DB 중 하나이다. 최근에는 빅데이터 분석을 위해 MongoDB와 같은 NoSQL이 많이 사용된다. 향후 MongoDB 설치와 사용법을 알아볼 예정이다.(MongoDB는 맥에 설치/사용 예정)
 
 - DBMS 랭킹 보기 : https://db-engines.com/en/ranking
 
