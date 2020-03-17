@@ -18,7 +18,7 @@ categories: sql
 다운로드 받은 파일을 클릭해서 설치를 진행하면 된다. (Next를 열 번은 넘게 누르게 될 것이다..)
 
 <figure >
-    <img src="/assets/images/mysql_installing_zip.PNG">
+    <img src="/assets/images/mysql_installing_zip.png">
 </figure>
 
 생각보다 오래 걸린다.. 근데 설치는 이게 끝이다 ㅋㅋ 
