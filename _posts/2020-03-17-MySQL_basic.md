@@ -1,7 +1,7 @@
 ---
 title: "윈도우 환경에서 MySQL 데이터베이스 설치 / SQL 기본문법"
 date: 2020-03-16
-permalink: /dev/
+permalink: /dev/post02
 classes: wide
 tags : sql
 categories: sql

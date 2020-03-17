@@ -1,7 +1,7 @@
 ---
 title: "MacOS에서 python3 버전 설치하고, Poetry로 프로젝트 관리하기"
 date: 2020-03-11
-permalink: /dev/
+permalink: /dev/post01
 classes: wide
 tags : python
 categories: python
