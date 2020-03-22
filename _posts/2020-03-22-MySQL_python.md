@@ -1,12 +1,14 @@
 ---
-title: "파이썬으로 MySQL 다루기"
+title: "파이썬으로 MySQL 다루기 / pymysql 라이브러리 사용하기"
 date: 2020-03-22
 permalink: /dev/post03
 tags : sql python
 categories: sql
 ---
 
-이 포스팅은 파이썬에서 mysql을 사용할 수 있는 라이브러리인 pymysql을 통해 mysql 핸들링하는 방법에 대한 내용이다. (pymysql 외에도 MySQLdb, MySQL connector 등 다양한 라이브러리 존재)
+
+
+본 포스팅은 파이썬에서 mysql을 사용할 수 있는 라이브러리인 pymysql을 통해 mysql 핸들링하는 방법에 대한 내용이다. (pymysql 외에도 MySQLdb, MySQL connector 등 다양한 라이브러리 존재)
 
 
 
@@ -36,6 +38,8 @@ import pymysql
 ```
 
 ### 2. 접속하기 connect() 
+
+
 
 [주요 파라미터]
 - host : 접속할 mysql server 주소
@@ -225,7 +229,7 @@ mysql> LOAD DATA INFILE 'CSV 데이터 파일 경로' INTO TABLE db_name.table_n
 ### 2. pandas와 pymysql : 파일로 데이터 저장하기
 
 pandas 의 read_sql() 메서드로 데이터 읽기
-
+pandas 의 to_csv() 메서드로 데이터 저장
 ```python
 import pymysql
 import pandas as pd 
@@ -250,6 +254,8 @@ df = pd.read_sql(SQL, db)
 
 SQL = "SELECT * FROM students"
 df = pd.read_sql(SQL, db)
+
+df.to_csv('save_table.csv', sep=',', header=False, encoding='utf8')
 ```
 
 ## 번외 (외래키 사용) 
