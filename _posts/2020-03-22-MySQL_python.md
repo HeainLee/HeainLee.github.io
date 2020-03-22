@@ -230,6 +230,7 @@ mysql> LOAD DATA INFILE 'CSV 데이터 파일 경로' INTO TABLE db_name.table_n
 
 - pandas 의 read_sql() 메서드로 데이터 읽기
 - pandas 의 to_csv() 메서드로 데이터 저장
+
 ```python
 import pymysql
 import pandas as pd 
