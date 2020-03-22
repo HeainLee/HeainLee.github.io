@@ -202,7 +202,7 @@ finally:
 데이터베이스/테이블 생성 또는 데이터 입력을 위한 sql 구문을 따로 .sql 파일로 저장해서 한꺼번에 명령을 실행시킬 수 있다.
 
 1. MySQL 워크벤치
-- File -> Open SQL Script -> filename.spl
+- File -> Open SQL Script -> filename.sql
 
 2. MySQL 터미널 명령
 
@@ -210,7 +210,7 @@ finally:
 mysql> SOURCE filename.sql;
 ```
 
-- SOURCE filename.sql 또는 SOURCE ../../filename.spl 
+- SOURCE filename.sql 또는 SOURCE ../../filename.sql 
 - filename.sql 파일 위치는 터미널 명령을 실행하는 동일 디렉토리에 있거나, 해당 디렉토리까지 명시해줘야 함
 
 
@@ -228,8 +228,8 @@ mysql> LOAD DATA INFILE 'CSV 데이터 파일 경로' INTO TABLE db_name.table_n
 
 ### 2. pandas와 pymysql : 파일로 데이터 저장하기
 
-pandas 의 read_sql() 메서드로 데이터 읽기
-pandas 의 to_csv() 메서드로 데이터 저장
+- pandas 의 read_sql() 메서드로 데이터 읽기
+- pandas 의 to_csv() 메서드로 데이터 저장
 ```python
 import pymysql
 import pandas as pd 
@@ -255,6 +255,8 @@ df = pd.read_sql(SQL, db)
 SQL = "SELECT * FROM students"
 df = pd.read_sql(SQL, db)
 
+# pd.to_csv('파일명', sep='분할자', header='헤더여부', encoding='인코딩유형')
+
 df.to_csv('save_table.csv', sep=',', header=False, encoding='utf8')
 ```
 
@@ -262,6 +264,29 @@ df.to_csv('save_table.csv', sep=',', header=False, encoding='utf8')
 
 외래키(FOREIGN KEY) 사용 이유: 두 테이블 사이에 관계를 선언해서, 데이터의 무결성을 보장하기 위해
 
-<figure >
-    <img src="/assets/images/mysql_foreign_key.png">
-</figure>
+```sql
+CREATE DATABASE ecommerce;
+USE ecommerce;
+SHOW DATABASES;
+
+CREATE TABLE product(
+    PRODUCT_CODE VARCHAR(20) NOT NULL,
+    TITLE VARCHAR(200) NOT NULL,
+    ORI_PRICE INT,
+    DISCOUNT_PRICE INT,
+    DISCOUNT_PERCENT INT,
+    DELIVERY VARCHAR(2),
+    PRIMARY KEY(PRODUCT_CODE)
+);
+DESC product;
+
+CREATE TABLE ranking(
+    ID INT UNSIGNED NOT NULL AUTO_INCREMENT,
+    CATEGORY VARCHAR(50),
+    SUBCATEGORY VARCHAR(50),
+    RANKING INT NOT NULL,
+    PRODUCT_CODE VARCHAR(20) NOT NULL,
+    PRIMARY KEY(ID)
+    FOREIGN KEY(PRODUCT_CODE) REFERENCES product(PRODUCT_CODE)
+);
+```
