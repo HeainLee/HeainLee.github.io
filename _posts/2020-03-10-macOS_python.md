@@ -2,7 +2,6 @@
 title: "MacOS에서 python3 버전 설치하고, pyenv로 가상환경 별 프로젝트 관리하기"
 date: 2020-03-11
 permalink: /dev/post01
-classes: wide
 tags : python
 categories: python
 ---
@@ -78,6 +77,7 @@ $ python3 --version
 > Python 3.7.6
 ```
 
+
 # 03. 파이썬 가상환경 사용하기
 지금까지 파이썬을 사용하면서 가장 귀찮았던 부분은 역시나 버전관리였다. 운영체제마다 가상환경 사용법도 달랐고, virtualenv, pyenv 또는 conda를 사용하는 방법까지 많은 옵션을 저울질해서 항상 그때마다 다른 방법을 사용하기도 했다.
 
@@ -106,15 +106,15 @@ $ brew install pyenv # pyenv 설치
 $ echo ‘export PYENV_ROOT=“$HOME/.pyenv”’ >> ~/.bash_profile
 $ echo ‘export PATH=“$PYENV_ROOT/bin:$PATH”’ >> ~/.bash_profile
 $ echo ‘eval “$(pyenv init -)”’ >> ~/.bash_profile
-```
-```bash
+
 # 환경변수 설정 - 방법2
 $ cat .bash_profile # export PYENV_ROOT=“$HOME/.pyenv”
 $ cat .bash_profile # export PATH=“$PYENV_ROOT/bin:$PATH”
 $ cat .bash_profile # eval “$(pyenv init -)”
 ```
 
-::참고로 .bash_profile이 없으면 생성해주면 된다. $ vi ~/.bash_profile # bash_profile 생성::
+> 참고로 bash_profile이 없으면 생성해주면 된다. $ vi ~/.bash_profile
+
 
 - **pyenv 설정파일 실행**
 
