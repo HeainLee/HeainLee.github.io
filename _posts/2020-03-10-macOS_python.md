@@ -116,6 +116,7 @@ $ cat .bash_profile # eval “$(pyenv init -)”
 ```
 
 - 참고로 bash_profile이 없으면 생성해주면 된다. 
+
 ```bash
 $ vi ~/.bash_profile
 ```
@@ -125,6 +126,7 @@ $ vi ~/.bash_profile
 ```bash
 $ source ~/.bash_profile
 ```
+
 - **pyenv 설치 점검**
 
 ```bash
@@ -152,9 +154,10 @@ $ pyenv install [python version] # 특정 파이썬 버전 설치
 <br>
 
 
-## 03-02. pyenv-virtualenv  설치
+## 03-02. pyenv-virtualenv 설치
 
 - ### virtualenv 설치/환경변수 설정 및 설정파일 실행
+
 ```bash
 $ brew install pyenv-virtualenv
 # $ echo  'eval "$(pyenv virtualenv-init -)"'  >> ~/.bash_profile
@@ -162,7 +165,8 @@ $ vi ~/.bash_profile  # 'eval "$(pyenv virtualenv-init -)"'
 $ source ~/.bash_profile
 ```
 
-- ### 가상 환경  생성  및  실행
+- ### 가상환경  생성  및  실행
+
 ```bash
 $ pyenv virtualenv [python version] [environment name] # 가상환경 생성
 $ pyenv activate [environment name] # 가상환경 실행
@@ -175,6 +179,7 @@ $ pyenv deactivate # 가상환경 종료
 
 
 ## 03-03. 프로젝트 버전 관리
+
 ```bash
 $ mkdir django_project # 프로젝트 폴더 생성
 $ cd django_project # 프로젝트 폴더 이동
