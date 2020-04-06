@@ -140,7 +140,7 @@ $ pyenv version # 현재 파이썬 버전
 - pyenv 명령어 
 
 <figure>
-    <img src="/assets/images/pyenv-howto.pngg">
+    <img src="/assets/images/pyenv-howto.png">
 </figure>
 
 - ### pyenv를 통한 파이썬 설치
