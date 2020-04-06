@@ -1,5 +1,5 @@
 ---
-title: "MacOS에서 python3 설치 / pyenv로 가상환경 별 프로젝트 관리하기"
+title: "[MacOS] python3 설치방법 / pyenv로 가상환경 별 프로젝트 관리"
 date: 2020-03-11
 permalink: /dev/post01
 tags : python
@@ -137,7 +137,7 @@ $ pyenv version # 현재 파이썬 버전
 
 - pyenv 명령어 
 
-<figure class="half">
+<figure>
     <img src="/assets/images/pyenv-howto.pngg">
 </figure>
 
