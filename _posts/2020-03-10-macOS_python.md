@@ -27,6 +27,9 @@ categories: python
 잡담은 여기까지하고 지금부터 나의 맥북프로에 python3를 설치한 방법을 정리해본다.
 
 
+<br>
+<br>
+
 
 # 01. Homebrew 설치
 
@@ -55,6 +58,10 @@ Homebrew 2.2.10
 brew를 통해 설치된 list를 확인하는 방법은 `brew list` 이며 설치 직후에는 아무것도 뜨지 않는다.
 
 
+<br>
+<br>
+
+
 # 02. python3 설치
 
 brew를 통한 python3 설치는 매우 간단하다.
@@ -76,6 +83,10 @@ python3 버전을 확인해보면 다음과 같다.
 $ python3 --version
 > Python 3.7.6
 ```
+
+
+<br>
+<br>
 
 
 # 03. 파이썬 가상환경 사용하기
@@ -115,7 +126,7 @@ $ cat .bash_profile # export PATH=“$PYENV_ROOT/bin:$PATH”
 $ cat .bash_profile # eval “$(pyenv init -)”
 ```
 
-- 참고로 bash_profile이 없으면 생성해주면 된다. 
+> 참고로 bash_profile이 없으면 생성해주면 된다. 
 
 ```bash
 $ vi ~/.bash_profile
@@ -137,7 +148,7 @@ $ pyenv versions # 설치된 모든 python 버전 확인
 $ pyenv version # 현재 파이썬 버전
 ```
 
-- pyenv 명령어 
+> pyenv 명령어 
 
 <figure>
     <img src="/assets/images/pyenv-howto.png">
