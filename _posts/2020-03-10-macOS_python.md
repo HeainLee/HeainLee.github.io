@@ -92,29 +92,33 @@ $ python3 --version
 ## 03-01. pyenv 설치
 
 - **Homebrew 업데이트**
+
 ```bash
 $ brew update
 $ brew upgrade
 ```
 - **pyenv 설치**
+
 ```bash
 $ brew install pyenv # pyenv 설치 
 ```
 - **pyenv 환경변수 설정**
+
 ```bash
 # 환경변수 설정 - 방법1
 $ echo ‘export PYENV_ROOT=“$HOME/.pyenv”’ >> ~/.bash_profile
 $ echo ‘export PATH=“$PYENV_ROOT/bin:$PATH”’ >> ~/.bash_profile
 $ echo ‘eval “$(pyenv init -)”’ >> ~/.bash_profile
-
 # 환경변수 설정 - 방법2
 $ cat .bash_profile # export PYENV_ROOT=“$HOME/.pyenv”
 $ cat .bash_profile # export PATH=“$PYENV_ROOT/bin:$PATH”
 $ cat .bash_profile # eval “$(pyenv init -)”
 ```
 
-> 참고로 bash_profile이 없으면 생성해주면 된다. $ vi ~/.bash_profile
-
+- 참고로 bash_profile이 없으면 생성해주면 된다. 
+```bash
+$ vi ~/.bash_profile
+```
 
 - **pyenv 설정파일 실행**
 
@@ -130,11 +134,22 @@ $ pyenv --version # pyenv 버전 확인
 $ pyenv versions # 설치된 모든 python 버전 확인 
 $ pyenv version # 현재 파이썬 버전
 ```
+
+- pyenv 명령어 
+
+<figure class="half">
+    <img src="/assets/images/pyenv-howto.pngg">
+</figure>
+
 - ### pyenv를 통한 파이썬 설치
 
 ```bash
-$ pyenv install [python version[ # 특정 파이썬 버전 설치
+$ pyenv install [python version] # 특정 파이썬 버전 설치
 ```
+
+
+<br>
+<br>
 
 
 ## 03-02. pyenv-virtualenv  설치
@@ -153,6 +168,10 @@ $ pyenv virtualenv [python version] [environment name] # 가상환경 생성
 $ pyenv activate [environment name] # 가상환경 실행
 $ pyenv deactivate # 가상환경 종료
 ```
+
+
+<br>
+<br>
 
 
 ## 03-03. 프로젝트 버전 관리
