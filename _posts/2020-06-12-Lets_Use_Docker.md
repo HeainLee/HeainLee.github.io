@@ -118,10 +118,15 @@ service rabbitmq-server start
 
 # Create User in RabbitMQ
 sudo rabbitmqctl add_user dasol dasol
+# Set Tags
+# sudo rabbitmqctl set_user_tags dasol administrator
 # Grant necessary permissions
 sudo rabbitmqctl set_permissions -p / dasol “.*” “.*” “.*”
 # Verify permissions
 sudo rabbitmqctl list_permissions
+# others
+rabbitmqctl list_users
+rabbitmqctl status
 
 ```
 
@@ -166,6 +171,9 @@ sudo passwd root
 export LC_ALL=C.UTF-8
 locale -a 
 
+# 현재 디렉토리 포함&하위 목록 보기 
+find . -type d # 폴더 목록
+find . -type f # 파일 목록 
 ```
 
 - **rabbitmq관련 명령어**
