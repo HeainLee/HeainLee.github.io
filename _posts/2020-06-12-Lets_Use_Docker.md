@@ -45,6 +45,7 @@ docker commit -m "my image" ubuntu_1804 my_ubuntu:latest
 apt-get update
 apt-get install vim
 apt-get install sudo
+apt-get install net-tools
 apt-get install openjdk-8-jdk
 
 # pyenv 설치 (파이썬3 설치해도 되지만 관리가 편한 pyenv가 좋다)
@@ -100,6 +101,7 @@ alter user postgres with password 'postgres'
 createuser dasolution --interactive
 postgres=# CREATE DATABASE analytic_module OWNER dasolution ENCODING 'utf-8' ;
 postgres=# ALTER ROLE dasolution WITH PASSWORD 'dasolution' ;
+
 ### 연결확인
 psql -U dasolution -d analytic_module -W -h localhost
 # -U : username
@@ -107,6 +109,14 @@ psql -U dasolution -d analytic_module -W -h localhost
 # -W : password 사용
 # -h: 연결할 호스트. 제외할 경우 "peer authentication failed" 에러 발생 가능
 # See : https://www.lesstif.com/dbms/postgresql-61899197.html
+
+## psycopg2 pip로 설치 에러 나는 경우
+sudo apt-get install python-psycopg2
+sudo apt-get install libpq-dev
+
+## 설치 후 재시작
+service postgresql status
+service postgresql start / restart
 
 # 장고 개발환경 설정
 pip install -r requirements.txt
@@ -144,10 +154,16 @@ sudo apt-get install rabbitmq-server -y --fix-missing
 service rabbitmq-server start
 >  * Starting message broker rabbitmq-server  
 
+# Management UI 플로그인 활성화
+# RabbitMQ는 Management 라는 UI 관리 도구를 제공한다. 이 기능을 사용하기 위해서는 RabbitMQ Plugin을 활성화 시켜야 한다.
+rabbitmq-plugins enable rabbitmq_management
+
+
+# gui모드에서 guest/guest인 아이디가 생성되지만 외부에서 접근하지 못한다.
 # Create User in RabbitMQ
 sudo rabbitmqctl add_user dasol dasol
 # Set Tags
-# sudo rabbitmqctl set_user_tags dasol administrator
+sudo rabbitmqctl set_user_tags dasol administrator
 # Grant necessary permissions
 sudo rabbitmqctl set_permissions -p / dasol “.*” “.*” “.*”
 # Verify permissions
@@ -202,6 +218,10 @@ locale -a
 # 현재 디렉토리 포함&하위 목록 보기 
 find . -type d # 폴더 목록
 find . -type f # 파일 목록 
+
+# 서비스가 켜졌는지 확인
+service --status-all
+
 ```
 
 - **rabbitmq관련 명령어**
@@ -212,10 +232,8 @@ service rabbitmq-server start
 service rabbitmq-server stop
 service rabbitmq-server status
 
-# Management UI 플로그인 활성화
-# RabbitMQ는 Management 라는 UI 관리 도구를 제공한다. 이 기능을 사용하기 위해서는 RabbitMQ Plugin을 활성화 시켜야 한다.
-rabbitmq-plugins enable rabbitmq_management
-
+# 목록으로 플러그인이 켜졌는지 확인할 수 있음
+rabbitmq-plugins list
 ```
 
 > 포트설정
