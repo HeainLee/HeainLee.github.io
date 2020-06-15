@@ -80,6 +80,34 @@ export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 
+# postgreql 설치
+sudo apt install postgresql postgresql-contrib
+sudo -i -u postgres
+psql
+
+## 외부접속..
+postgres=# \conninfo
+vi /etc/postgresql/10/main/postgresql.conf 
+>> 다음을 추가 listen_addresses = '*'
+>> 재시작 sudo service postgresql restart
+vi /etc/postgresql/9.3/main/pg_hba.conf
+>> IPv4 local connection의 ADDRESS를 0.0.0.0:0 로 수정
+
+## 패스워드 변경
+alter user postgres with password 'postgres'
+
+## 새로운 데이터베이스/유저 생성 
+createuser dasolution --interactive
+postgres=# CREATE DATABASE analytic_module OWNER dasolution ENCODING 'utf-8' ;
+postgres=# ALTER ROLE dasolution WITH PASSWORD 'dasolution' ;
+### 연결확인
+psql -U dasolution -d analytic_module -W -h localhost
+# -U : username
+# -d : database name
+# -W : password 사용
+# -h: 연결할 호스트. 제외할 경우 "peer authentication failed" 에러 발생 가능
+# See : https://www.lesstif.com/dbms/postgresql-61899197.html
+
 # 장고 개발환경 설정
 pip install -r requirements.txt
 # psycopg2==2.8.5 install 안됨 —> pip install psycopg2-binary?
