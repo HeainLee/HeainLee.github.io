@@ -222,6 +222,12 @@ find . -type f # 파일 목록
 # 서비스가 켜졌는지 확인
 service --status-all
 
+# 패키지 정보 조회
+apt show <package_name> 
+# 설치된 패키지 목록 조회
+apt list --installed # 또는 dpkg -l
+# (--upgradable # 업그레이드 대상 패키지 목록 조회)
+
 ```
 
 - **rabbitmq관련 명령어**
