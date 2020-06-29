@@ -2,6 +2,7 @@
 title: "정확도 손실 없이 뉴럴 네트워크의 99%를 제거할 수 있을까?"
 date: 2020-06-19
 permalink: /dev/post09
+classes: wide
 tags : deep-learning neural-network
 categories: paper
 ---
