@@ -69,6 +69,9 @@ sudo service celeryd start {status|stop|restart}
 ```
 
 
+
+
+
 **😄설정파일 옵션 예시😄**
 
 ```bash
