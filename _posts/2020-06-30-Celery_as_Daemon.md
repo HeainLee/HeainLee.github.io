@@ -11,10 +11,10 @@ categories: code
 
 우분투 환경에서 샐러리를 init-scipt 사용해서 데몬으로  실행시키는 방법을 정리한 내용입니다.
 
-공식문서가 다소 불친절해서...🤔 결국 구글링으로 참고하기에 좋은 블로그를 찾았고 💕 그 내용을 정리한 것이다.
+공식문서가 다소 불친절해서...🤔 결국 구글링으로 참고하기에 좋은 블로그를 찾았고🧐 그 내용을 정리한 것이다.
 
 
-- [참고한 블로그(친절)](https://pythad.github.io/articles/2016-12/how-to-run-celery-as-a-daemon-in-production)  /  [공식문서(불친절)](https://docs.celeryproject.org/en/latest/userguide/daemonizing.html#daemonizing)
+- [참고한 블로그(친절)](https://pythad.github.io/articles/2016-12/how-to-run-celery-as-a-daemon-in-production)  /  [공식문서(불친절)](https://docs.celeryproject.org/en/latest/userguide/daemonizing.html#daemonizing) / [추가로 보면 좋을 블로그1](https://kitcharoenp.github.io/celery/2019/03/11/celery_worker_as_daemon.html)
 
 ### 00. 서버에 등록된 서비스 확인 방법
 
@@ -22,6 +22,8 @@ categories: code
 service —status-all
 ```
 
+<br>
+<br>
 
 
 ### 01. Init-script: celeryd
@@ -29,7 +31,7 @@ service —status-all
 - **celeryd 등록**
 
 1. `/etc/init.d` 경로에 `celeryd` 파일 생성
-2. [celery repo](https://github.com/celery/celery/blob/master/extra/generic-init.d/celeryd) 에 나온 스크립트 복붙
+2. [celery 깃헙](https://github.com/celery/celery/blob/master/extra/generic-init.d/celeryd) 에 나온 celeryd 스크립트 복붙
 3. 다음 명령어를 터미널에 입력
 ```bash
 sudo chmod 755 /etc/init.d/celeryd
@@ -42,13 +44,16 @@ sudo chown root:root /etc/init.d/celeryd
 2. [celeryd 설정 옵션](https://docs.celeryproject.org/en/latest/userguide/daemonizing.html#available-options)에서 각 프로젝트에 맞게 설정 옵션 등록
 
 
+<br>
+<br>
+
 
 ### 02. Init-script: celerybeat
 
 - **celerybeat 등록**
 
 1.  `/etc/init.d`  경로에  `celerybeat`  파일 생성
-2. [celery repo](https://github.com/celery/celery/blob/master/extra/generic-init.d/celerybeat)에 나온 스크립트 복붙
+2. [celery 깃헙](https://github.com/celery/celery/blob/master/extra/generic-init.d/celerybeat)에 나온 celerybeat 스크립트 복붙
 3. 다음 명령어를 터미널에 등록
 ```bash
 sudo chmod 755 /etc/init.d/celerybeat
@@ -60,6 +65,9 @@ sudo chown root:root /etc/init.d/celerybeat
 celeryd 설정 했던 것과 같이  `/etc/default` 경로에서 `celerybeat` 파일을 생성해서 등록하거나, 기존의 `celeryd` 하위에 추가해서 사용해도 됨
 
 
+<br>
+<br>
+
 
 ### 03. 등록된 서비스 사용방법
 ```bash 
@@ -68,11 +76,12 @@ sudo /etc/init.d/celeryd start {status|stop|restart}
 sudo service celeryd start {status|stop|restart}
 ```
 
+<br>
+<br>
+<br>
+<br>
 
-
-
-
-**😄설정파일 옵션 예시😄**
+**⚙︎ 설정파일 옵션 예시 ⚙︎**
 
 ```bash
 # Absolute or relative path to the 'celery' command:
