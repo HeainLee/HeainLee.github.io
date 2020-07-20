@@ -47,6 +47,7 @@ categories: machine-learning
 4. Cost function
 5. Plotting of functions
 6. Minimum and Maximum values of a function <br>
+
 --- 
 
 - **선형대수학**
