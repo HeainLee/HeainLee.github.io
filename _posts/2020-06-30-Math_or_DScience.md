@@ -27,7 +27,7 @@ categories: machine-learning
 3. 확률 분포(Probability distributions) - Binomial, Poisson, Normal, etc ...
 4. 유의 확률(p-value)
 5. 베이즈 정리(Bayes' theorem) <br>
-    양성 예측도(Positive Predictive Value), 음성 예측도(Negative Predictive Value)
+    양성 예측도(Positive Predictive Value), 음성 예측도(Negative Predictive Value) <br>
     정밀도(Precision, 예측 값 중에 실제 맞춘 확률), 재현율(Recall, 실제 값 중에 예측한 확률), ROC/AUC
 6. 중심극한정리(Central Limit Theorem)
 7. 결정계수(R2 score)
