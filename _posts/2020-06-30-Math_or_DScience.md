@@ -9,9 +9,9 @@ categories: machine-learning
 
 ## 데이터 분석가에게 요구되는 기초적인 수학 능력에 대하여
 
-예측 모델을 작성하거나 데이터 시각화를 위핸 좋은 패키지들이 많다. 그 덕분에 누구나 모델을 구축하거나 데이터 시각화를 할 수 있다.    
-그러나 최적의 성능으로 신뢰할 수 있는 모델을 생성하기 위해 미세 조정(fine-tuning)을 하려면 수학에 대한 배경 지식이 있어야 한다.    
-또한 모델을 구축하는 것도 중요하지만, 모델을 해석하고 데이터 기반의 의사 결정에 도움이되는 의미있는 결론을 도출하는 일은 또 다른 얘기다.   
+예측 모델을 작성하거나 데이터 시각화를 위한 좋은 패키지들이 많다. 그 덕분에 누구나 모델을 구축하거나 데이터 시각화를 할 수 있다.    
+그러나 최적의 성능으로 신뢰할 수 있는 모델을 생성하기 위해서는 패키지에만 의존할 수 없고, 수학에 대한 배경 지식이 있어야 한다.    
+또한 모델을 해석하고, 데이터 기반의 의사 결정을 하고, 의미있는 결론을 도출하는 일은 또 다른 얘기다.(모두 수학적 해석이 요구되는 일들이다.)   
 이러한 패키지를 사용하기 전에 각 패키지의 수학적 기초를 이해하고 이러한 패키지를 단순히 블랙 박스 도구로 사용하지 않는 것이 중요하다.    
 
 
@@ -26,12 +26,14 @@ categories: machine-learning
 2. 상관계수(Correlation coefficient), 공분산 행렬(covariance matrix)
 3. 확률 분포(Probability distributions) - Binomial, Poisson, Normal, etc ...
 4. 유의 확률(p-value)
-5. 베이즈 정리(Bayes' theorem) - 양성 예측도(Positive Predictive Value), 음성 예측도(Negative Predictive Value) <br>
+5. 베이즈 정리(Bayes' theorem) <br>
+    양성 예측도(Positive Predictive Value), 음성 예측도(Negative Predictive Value)
     정밀도(Precision, 예측 값 중에 실제 맞춘 확률), 재현율(Recall, 실제 값 중에 예측한 확률), ROC/AUC
 6. 중심극한정리(Central Limit Theorem)
 7. 결정계수(R2 score)
 8. 평균제곱오차(Mean Square Error, MSE)
 9. A/B Testing, 몬테카를로 방법(Monte Carlo Simulation) <br>
+
 --- 
 
 - **다변량 미적분**
@@ -56,6 +58,7 @@ categories: machine-learning
 2. 행렬(Matrices), Transpose of a matrix
 3. The inverse of a matrix; The determinant of a matrix; Trace of a Matrix;
 4. 내적(Dot product), 고유값(Eigenvalues), 고유벡터(Eigenvectors) <br>
+
 --- 
 
 - **최적화 방법론**
@@ -68,6 +71,7 @@ categories: machine-learning
 2. 가능도 함수(Likelihood function) 
 4. 오차함수(Error function)
 5. 경사하강법과 그 변형들(Gradient Descent Algorithm) <br>
+
 --- 
 
 <br>
