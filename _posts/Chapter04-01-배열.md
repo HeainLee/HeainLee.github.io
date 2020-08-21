@@ -1,9 +1,14 @@
 ---
-title: "html upload test"
-date: 2020-08-21
-permalink: /dev/post12
-tags : jupyter
-categories: jupyter
+title: "Jupyter로 Jekyll 포스팅하기"
+search: true
+categories:
+ - Notebook
+tags:
+ - Jupyter
+ - Jekyll
+last_modified_at: 2019-12-3 02:55
+layout: jupyter
+classes: wide
 ---
 
 ## 꼭 알아둬야 할 자료 구조: 배열 (Array)
