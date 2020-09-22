@@ -64,7 +64,7 @@ dvc init
 
 - **저장소 설정**
 
-> remote 저장소를 만든다. 테스트를 위해 local 디렉토리를 사용했지만, 
+> remote 저장소를 만든다. 테스트를 위해 local 디렉토리를 사용했지만, <br>
 > 프로젝트를 진행할 때는 다른 사람들과 공유해야 하므로 클라우드 스토리지가 좋을 듯 하다
 
 [remote 저장소 목록 보기](https://dvc.org/doc/command-reference/remote/add#supported-storage-types)
@@ -87,7 +87,7 @@ cat config
 
 - **버전관리**
 
-    - **add**  :   ~변경사항~ 을 시스템에 **추가** [add 커맨드](https://dvc.org/doc/command-reference/add)
+    - **add**  :   변경사항을 시스템에 **추가** [add 커맨드 ](https://dvc.org/doc/command-reference/add)
 
     ```bash
     dvc add [데이터파일] # 또는 [디렉토리]를 add 할 수도 있음
@@ -96,7 +96,7 @@ cat config
     # 즉, [데이터파일] 또는 [디렉토리] 자체가 아니라 데이터파일정보(.dvc)를 git 으로 올리게 됨!
     ```
 
-    - **push** :  ~remote 저장소~ 에 **올리기**   [push 커맨드](https://dvc.org/doc/command-reference/push)
+    - **push** :  remote 저장소에 **올리기**   [push 커맨드 상세보기](https://dvc.org/doc/command-reference/push)
 
     ```bash
     dvc push # 또는 dvc push [데이터파일].dvc 로 특정 파일을 지정할 수 있음
@@ -111,9 +111,9 @@ cat config
 
     dvc-data-remote/ea:
     534c8827099ffba3a8c85fb2b59340
-```
+    ```
 
-    -  **pull** : ~remote 저장소~ 에 저장된 내용 **내려받기** [pull 커맨드](https://dvc.org/doc/command-reference/pull)
+    -  **pull** : remote 저장소 에 저장된 내용 **내려받기** [pull 커맨드 상세보기](https://dvc.org/doc/command-reference/pull)
 
     ```bash
     rm [데이터파일] # 또는 rm -rf [디렉토리]
@@ -126,5 +126,5 @@ cat config
 
 ---
 
-다음으로 데이터 접근(Data Access) 에 대해 알아보자. 
+다음으로 데이터 접근(Data Access) 에 대해 알아보자. <br>
 [dvc 공식 홈페이지](https://dvc.org/) 에서 직접 알아봐도 된다. 🤣
