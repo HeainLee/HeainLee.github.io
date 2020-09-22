@@ -9,11 +9,11 @@ categories: machine-learning
 # About DVC
 들어가기 전에… 
 
-MLOps라는 용어가 요즘 미디엄에서 자주 등장한다. DevOps의 개념을 ML/DL 분야에 특화 및 확장한 것으로, 기존에는 웹/앱 개발과 같은 프로젝트에서 코드의 버전 관리가 중요했듯이, ML/DL 프로젝트에서도 버전 관리가 중요하기 때문이다.  MLOps가 기존의 DevOps와 다른 점은 코드 뿐만 아니라 모델을 생성하기 위한 데이터와 모델 자체의 버전 또한 관리해야 한다는 것이다. 이를 위해 git과 비슷하게 사용할 수 있는 좋은 툴이 있어서 사용법을 정리한다.
+MLOps라는 용어가 요즘 미디엄에서 자주 등장한다. DevOps의 개념을 ML/DL 분야에 특화 및 확장한 것으로, 웹/앱 개발과 같은 프로젝트에서 코드의 버전 관리가 중요했듯이, ML/DL 프로젝트에서도 버전 관리가 중요하다. MLOps가 기존의 DevOps와 다른 점은 **코드 뿐만 아니라 모델을 생성하기 위한 데이터와 모델 자체의 버전 또한 관리**해야 한다는 것이다. 이를 위해 git과 비슷하게 사용할 수 있는 좋은 툴이 있어서 사용법을 정리한다.
 
-dvc 는 ML project (머신러닝 프로젝트)를 위한 오픈소스 버전 관리 시스템으로, ML 모델과 데이터를 tracking 하기 위한 툴이다. 
+dvc 는 **ML project (머신러닝 프로젝트)를 위한 오픈소스 버전관리시스템**으로, ML 모델과 데이터를 tracking 하기 위한 툴이다. 
 
-dvc 를 통해 ML 모델과 데이터를 공유 가능하고 (shareable) 재현가능한(reproducible) 상태로 쉽게 만들 수 있다. 또한, 대용량 데이터 파일을 관리하고 모델 성능 측정값 또한 관리할 수 있다. 
+dvc 를 통해 ML 모델과 데이터를 공유 가능하고(shareable) 재현가능한(reproducible) 상태로 쉽게 만들 수 있다. 또한, 대용량 데이터 파일을 관리하고 모델 성능 측정값 또한 관리할 수 있다. 
 
 <figure >
     <img src="https://avatars2.githubusercontent.com/u/39572954?s=400&v=4" width="200">
@@ -49,7 +49,7 @@ dvc 로 데이터 버전 관리하는 방법에 대해 알아본다. <br>
 
 ---
  
-- **초기화**
+- **초기화** 🍽
 
 > 버전 관리에 들어갈 디렉토리를 초기화 해준다 
 
@@ -62,7 +62,7 @@ dvc init
 
 ---
 
-- **저장소 설정**
+- **저장소 설정** 🏖
 
 > remote 저장소를 만든다. 테스트를 위해 local 디렉토리를 사용했지만, <br>
 > 프로젝트를 진행할 때는 다른 사람들과 공유해야 하므로 클라우드 스토리지가 좋을 듯 하다
@@ -85,9 +85,9 @@ cat config
 
 ---
 
-- **버전관리**
+- **버전관리** 📨
 
-    - **add**  :   변경사항을 시스템에 **추가** [add 커맨드 ](https://dvc.org/doc/command-reference/add)
+    - **add**  📬:   변경사항을 시스템에 **추가** [add 커맨드 상세보기](https://dvc.org/doc/command-reference/add)
 
     ```bash
     dvc add [데이터파일] # 또는 [디렉토리]를 add 할 수도 있음
@@ -96,7 +96,7 @@ cat config
     # 즉, [데이터파일] 또는 [디렉토리] 자체가 아니라 데이터파일정보(.dvc)를 git 으로 올리게 됨!
     ```
 
-    - **push** :  remote 저장소에 **올리기**   [push 커맨드 상세보기](https://dvc.org/doc/command-reference/push)
+    - **push** 📫:  remote 저장소에 **올리기**   [push 커맨드 상세보기](https://dvc.org/doc/command-reference/push)
 
     ```bash
     dvc push # 또는 dvc push [데이터파일].dvc 로 특정 파일을 지정할 수 있음
@@ -113,7 +113,7 @@ cat config
     534c8827099ffba3a8c85fb2b59340
     ```
 
-    -  **pull** : remote 저장소 에 저장된 내용 **내려받기** [pull 커맨드 상세보기](https://dvc.org/doc/command-reference/pull)
+    -  **pull** 📥: remote 저장소 에 저장된 내용 **내려받기** [pull 커맨드 상세보기](https://dvc.org/doc/command-reference/pull)
 
     ```bash
     rm [데이터파일] # 또는 rm -rf [디렉토리]
@@ -128,3 +128,5 @@ cat config
 
 다음으로 데이터 접근(Data Access) 에 대해 알아보자. <br>
 [dvc 공식 홈페이지](https://dvc.org/) 에서 직접 알아봐도 된다. 🤣
+
+
