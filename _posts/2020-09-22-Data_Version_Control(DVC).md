@@ -15,9 +15,8 @@ dvc 는 **ML project (머신러닝 프로젝트)를 위한 오픈소스 버전�
 
 dvc 를 통해 ML 모델과 데이터를 공유 가능하고(shareable) 재현가능한(reproducible) 상태로 쉽게 만들 수 있다. 또한, 대용량 데이터 파일을 관리하고 모델 성능 측정값 또한 관리할 수 있다. 
 
-<figure >
-    <img src="https://avatars2.githubusercontent.com/u/39572954?s=400&v=4" width="200">
-</figure>
+<img src="/assets/images/dvc-icon.png" width="300" height="300">
+
 
 dvc 는 크게 4가지 주요 기능을 제공한다. 
 
