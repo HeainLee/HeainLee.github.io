@@ -125,7 +125,7 @@ cat config
 
 ---
 
-다음으로 데이터 접근(Data Access) 에 대해 알아보자. <br>
+다음으로 [PART2 데이터 접근(Data Access)](https://heainlee.github.io/dev/post13)에 대해 알아보자. <br>
 [dvc 공식 홈페이지](https://dvc.org/) 에서 직접 알아봐도 된다. 🤣
 
 
